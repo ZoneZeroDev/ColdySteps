@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img width=800 height=400 src="https://raw.githubusercontent.com/NubilumDev/ColdySteps/master/.github/coldysteps.png"  alt=""/>
+  <img width=300 height=150 src="https://raw.githubusercontent.com/NubilumDev/ColdySteps/master/.github/coldysteps.png"  alt=""/>
   <br>ColdySteps<br>
 </h1>
 
@@ -35,6 +35,8 @@
   <a href="#config">Config</a>
 </p>
 
+### This plugin requires the [DarkWaterAPI](https://github.com/kiinse/DarkWaterAPI/releases) library version 3.1.0 or higher!
+
 ## Donations
 
 If you want to support the project, then
@@ -47,7 +49,12 @@ Please **don't** open an issue just for the sake of questions.
 
 ## Features
 
-- 
+- Now the player freezes in cold biomes
+- The player can keep warm using food
+- Player can warm up by standing near hot blocks
+- There is a localization system thanks to DarkWaterAPI
+- There is support for placeholders
+- There is also a well customizable config
 
 ## Download
 
