@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img width=300 height=150 src="https://raw.githubusercontent.com/NubilumDev/ColdySteps/master/.github/coldysteps.png"  alt=""/>
+  <img width=800 height=400 src="https://raw.githubusercontent.com/NubilumDev/ColdySteps/master/.github/coldysteps.png"  alt=""/>
   <br>ColdySteps<br>
 </h1>
 
