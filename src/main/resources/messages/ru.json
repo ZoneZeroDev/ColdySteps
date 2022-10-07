@@ -1,0 +1,10 @@
+{
+  "prefix": "&b[Coldy]: ",
+  "ph_no_cold": "&aНе холодно",
+  "ph_light_cold": "&aНемного холодно",
+  "ph_medium_cold": "&eХолодно",
+  "ph_hard_cold": "&6Очень холодно",
+  "ph_critical_cold": "&cСрочно погрейтесь!",
+  "ph_cold": "&aХолод",
+  "death_message": "&6Игрок &f{PLAYER} &6замёрз насмерть."
+}

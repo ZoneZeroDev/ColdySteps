@@ -1,0 +1,4 @@
+# The worlds in which the plugin works
+worlds:
+  - world
+  - world_the_end

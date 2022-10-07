@@ -1,0 +1,10 @@
+# Which blocks warm the player in a certain radius (Block: Amount of cold removed in percent)
+blocks:
+  - FIRE:2.3
+  - BURNING_FURNACE:1.6
+  - BURNING_BLAST_FURNACE:1.8
+  - BURNING_SMOKER:1.5
+  - BURNING_CAMPFIRE:2.3
+  - BURNING_SOUL_CAMPFIRE:2.5
+  - LAVA:0.7
+  - MAGMA_BLOCK:0.3

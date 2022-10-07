@@ -1,0 +1,18 @@
+name: ColdySteps
+version: '${version}'
+main: kiinse.plugin.coldysteps.ColdySteps
+api-version: 1.18
+prefix: Coldy
+depend:
+  - DarkWaterAPI
+softdepend: [PlaceholderAPI]
+authors: [kiinse]
+description: This plugin adds a cold system.
+website: https://kiinse.me/
+permissions:
+  coldy.vip:
+    description: Player Chill Reduction.
+  coldy.premium:
+    description: Player Chill Reduction.
+  coldy.deluxe:
+    description: Player Chill Reduction.

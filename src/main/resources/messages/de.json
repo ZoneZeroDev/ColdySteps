@@ -1,0 +1,10 @@
+{
+  "prefix": "&b[Coldy]: ",
+  "ph_no_cold": "&aNicht kalt",
+  "ph_light_cold": "&aEin bisschen kalt",
+  "ph_medium_cold": "&eKalt",
+  "ph_hard_cold": "&6Very cold",
+  "ph_critical_cold": "&cSehr kalt!",
+  "ph_cold": "&aKalt",
+  "death_message": "&6Spieler &f{PLAYER} &6starb an der Kälte."
+}

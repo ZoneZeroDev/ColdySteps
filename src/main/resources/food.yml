@@ -1,0 +1,6 @@
+# What kind of food keeps the player warm when they eat it (Food:Amount of percentage restored)
+food:
+  - SUSPICIOUS_STEW:15.0
+  - MUSHROOM_STEW:25.0
+  - RABBIT_STEW:40.0
+  - BEETROOT_SOUP:20.0

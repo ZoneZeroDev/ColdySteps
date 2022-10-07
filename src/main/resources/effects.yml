@@ -1,0 +1,5 @@
+# Effects when the player reaches a certain level of cold
+effects:
+  - WEAKNESS
+  - SLOW_DIGGING
+  - SLOW
