@@ -28,7 +28,6 @@
   <a href="#support">Support</a> •
   <a href="#features">Features</a> •
   <a href="#download">Download</a> •
-  <a href="#commands">Commands</a> •
   <a href="#config">Config</a>
 </p>
 
