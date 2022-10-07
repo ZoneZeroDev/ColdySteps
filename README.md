@@ -11,22 +11,19 @@
   </a>
 
   <a href="https://github.com/NubilumDev/ColdySteps/releases">
-    <img src="https://img.shields.io/github/v/release/kiinse/ColdySteps?include_prereleases&style=flat-square" alt="release">
-  </a>
-  <a href="https://github.com/NubilumDev/ColdySteps/actions/workflows/gradle-package.yml">
-    <img src="https://img.shields.io/github/workflow/status/kiinse/ColdySteps/Create%20packages%20with%20Gradle?style=flat-square" alt="build"> 
+    <img src="https://img.shields.io/github/v/release/NubilumDev/ColdySteps?include_prereleases&style=flat-square" alt="release">
   </a>
   <a href="https://github.com/NubilumDev/ColdySteps">
-    <img src="https://img.shields.io/github/repo-size/kiinse/ColdySteps?style=flat-square" alt="size"> 
+    <img src="https://img.shields.io/github/repo-size/NubilumDev/ColdySteps?style=flat-square" alt="size"> 
   </a>
   <a href="https://github.com/NubilumDev/ColdySteps/releases">
-    <img src="https://img.shields.io/github/downloads/kiinse/ColdySteps/total?style=flat-square" alt="downloads"> 
+    <img src="https://img.shields.io/github/downloads/NubilumDev/ColdySteps/total?style=flat-square" alt="downloads"> 
   </a>
   <a href="https://github.com/NubilumDev/ColdySteps/issues">
-    <img src="https://img.shields.io/github/issues/kiinse/ColdySteps?style=flat-square" alt="issues"> 
+    <img src="https://img.shields.io/github/issues/NubilumDev/ColdySteps?style=flat-square" alt="issues"> 
   </a>
   <a href="https://github.com/NubilumDev/ColdySteps/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/kiinse/ColdySteps?style=flat-square" alt="licence"> 
+    <img src="https://img.shields.io/github/license/NubilumDev/ColdySteps?style=flat-square" alt="licence"> 
   </a><br><br>
   <a href="#support">Support</a> •
   <a href="#features">Features</a> •
