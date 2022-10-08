@@ -17,11 +17,21 @@ import kiinse.plugin.coldysteps.initialize.*;
 import kiinse.plugin.coldysteps.utilities.schedulers.ColdSchedule;
 import kiinse.plugin.coldysteps.utilities.schedulers.DamageSchedule;
 import kiinse.plugins.darkwaterapi.api.DarkWaterJavaPlugin;
+import kiinse.plugins.darkwaterapi.api.exceptions.VersioningException;
 import kiinse.plugins.darkwaterapi.api.files.locale.PlayerLocales;
 import kiinse.plugins.darkwaterapi.api.indicators.Indicator;
 import kiinse.plugins.darkwaterapi.api.indicators.IndicatorManager;
 import kiinse.plugins.darkwaterapi.api.schedulers.SchedulersManager;
+import kiinse.plugins.darkwaterapi.api.utilities.TaskType;
+import kiinse.plugins.darkwaterapi.core.utilities.DarkUtils;
+import kiinse.plugins.darkwaterapi.core.utilities.DarkVersionUtils;
 import org.jetbrains.annotations.NotNull;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Objects;
+import java.util.logging.Level;
 
 public final class ColdySteps extends DarkWaterJavaPlugin {
 
@@ -63,6 +73,7 @@ public final class ColdySteps extends DarkWaterJavaPlugin {
             indicatorManager.register(this, indicator);
         schedulersManager.register(damageSchedule);
         schedulersManager.register(coldSchedule);
+        checkForUpdates();
     }
 
     @Override
@@ -72,6 +83,31 @@ public final class ColdySteps extends DarkWaterJavaPlugin {
         schedulersManager.unregister(damageSchedule);
         schedulersManager.unregister(coldSchedule);
 
+    }
+
+    private void checkForUpdates() {
+        DarkUtils.runTask(TaskType.ASYNC, this, () -> {
+            if (!getConfiguration().getBoolean(Config.DISABLE_VERSION_CHECK)) {
+                try {
+                    var latest = DarkVersionUtils.getLatestGithubVersion("https://github.com/NubilumDev/ColdySteps");
+                    if (!latest.isGreaterThan(DarkVersionUtils.getPluginVersion(this))) {
+                        sendLog("Latest version of ColdySteps installed, no new versions found <3");
+                        return;
+                    }
+                    var reader = new BufferedReader(new InputStreamReader(
+                            Objects.requireNonNull(this.getClass().getClassLoader().getResourceAsStream("version-message.txt"))));
+                    var builder = new StringBuilder("\n");
+                    while (reader.ready())
+                        builder.append(reader.readLine()).append("\n");
+                    sendConsole(DarkUtils.replaceWord(builder.toString(), new String[]{
+                            "{NEW_VERSION}:" + latest.getOriginalValue(),
+                            "{CURRENT_VERSION}:" + getDescription().getVersion()
+                    }));
+                } catch (IOException | VersioningException e) {
+                    sendLog(Level.WARNING, "Error while checking ColdySteps version! Message: " + e.getMessage());
+                }
+            }
+        });
     }
 
     public @NotNull PlayerLocales getLocales() {

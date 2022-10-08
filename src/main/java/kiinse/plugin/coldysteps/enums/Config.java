@@ -19,6 +19,7 @@ public enum Config implements YamlKeys {
     REMOVE_LEATHER,
     REMOVE_RADIUS,
     REMOVE_FOOD,
+    DISABLE_VERSION_CHECK,
     ADD_INBIOME,
     ADD_WATER,
     ADD_THUNDER,
